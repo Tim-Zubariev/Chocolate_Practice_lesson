@@ -7,11 +7,35 @@
 .made-ill {
 }
 .made-caption {
+  margin-bottom: 28px;
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
+  max-width: 350px;
 }
 .made-list {
 }
 .made-item {
+  list-style-type: disc;
+}
+
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.made-left-side {
+  border-radius: 16px;
+  width: 600px;
+  overflow: hidden;
+}
+.made-right-side {
+  border-radius: 15px;
+  padding: 32px;
+  width: 516px;
+  background-color: #fff;
 }

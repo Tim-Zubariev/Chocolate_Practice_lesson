@@ -1,5 +1,7 @@
 .footer {
   background-color: #1e1823;
+  padding-block: 50px;
+  padding-inline: 0;
 }
 .footer-slogan {
   font-weight: 500;
@@ -7,6 +9,8 @@
   line-height: 1.21;
   letter-spacing: -0.03em;
   color: #fff;
+  max-width: 300px;
+  margin-right: auto;
 }
 .footer-caption {
   font-weight: 600;
@@ -14,12 +18,15 @@
 }
 
 .contacts {
+  margin-left: 90px;
 }
 .footer-caption {
+  margin-bottom: 14px;
 }
 .contacts-list {
 }
-.contacts-item {
+.contacts-item:not(:last-child) {
+  margin-bottom: 4px;
 }
 .contacts-links {
   color: #fff;
@@ -29,14 +36,38 @@
   color: #fd9222;
 }
 .footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
 }
 .footer-menu-item {
 }
 .footer-menu-link {
+  display: block;
   font-weight: 500;
   color: #fff;
+  padding: 11px 0;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {
   color: #fd9222;
+}
+
+.footer-top {
+  display: flex;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-block: 0 48px;
+  padding-inline: 0;
+}
+
+.footer-bottom {
+  padding-block: 24px 0;
+  padding-inline: 0;
+}
+
+.footer-wrapper {
+}
+
+.social-icon .light {
+  color: #fff;
 }
