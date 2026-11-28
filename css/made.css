@@ -16,7 +16,22 @@
 .made-list {
 }
 .made-item {
-  list-style-type: disc;
+  display: flex;
+  gap: 8px;
+}
+
+.made-item::before {
+  margin-top: 5px;
+  flex-shrink: 0;
+  content: "";
+
+  display: block;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+  border: 1px solid #eceded;
+
+  width: 8px;
+  height: 8px;
 }
 
 .made-item:not(:last-child) {

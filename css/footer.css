@@ -30,6 +30,9 @@
 }
 .contacts-links {
   color: #fff;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .contacts-links:hover,
 .contacts-links:focus {
@@ -47,6 +50,9 @@
   font-weight: 500;
   color: #fff;
   padding: 11px 0;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .footer-menu-link:hover,
 .footer-menu-link:focus {
@@ -68,6 +74,9 @@
 .footer-wrapper {
 }
 
-.social-icon .light {
+.social-light .socials-icons {
   color: #fff;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }

@@ -1,5 +1,5 @@
 .header {
-  padding: 24px 0;
+  padding-block: 20px;
 }
 
 .header .container {
@@ -21,14 +21,42 @@
 .main-nav-item {
 }
 .main-nav-link {
+  position: relative;
   display: block;
   padding: 11px 0;
   font-weight: 500;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .main-nav-link:hover,
-.main-nav-link:focus {
+.main-nav-link:focus,
+.main-nav-link.curent {
+  color: #fd9222;
+}
+
+.main-nav-link.curent::after {
+  left: 0;
+  bottom: 0;
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  height: 4px;
+  background-color: #fd9222;
+}
+
+.socials-icon {
+  color: #111111;
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
   color: #fd9222;
 }

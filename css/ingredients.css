@@ -11,6 +11,7 @@
   gap: 32px;
 }
 .ingredients-item {
+  position: relative;
   border-radius: 15px;
   padding-block: 28px;
   padding-inline: 24px;
@@ -36,4 +37,25 @@
   font-weight: 600;
   text-transform: uppercase;
   font-size: inherit;
+}
+
+.ingredients-button {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+}
+
+.ingredients-item:nth-child(2n) .ingredients-icon {
+  color: #fd9222;
+}
+
+.ingredients-item:nth-child(2n + 1) .ingredients-icon {
+  color: #fafafa;
 }

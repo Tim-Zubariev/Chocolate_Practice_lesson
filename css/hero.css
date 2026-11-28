@@ -1,5 +1,5 @@
 .hero {
-  padding-block: 80px;
+  padding-block: 0 80px;
 }
 
 .hero-wraper {
@@ -7,6 +7,11 @@
   border-radius: 30px;
   padding-block: 380px 40px;
   padding-inline: 40px;
+  background:
+    linear-gradient(rgba(17, 17, 17, 0.2), rgba(17, 17, 17, 0.8)),
+    url("../Images/hero/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .hero-controls {
@@ -31,6 +36,9 @@
   font-weight: 500;
   color: #fff;
   margin-left: auto;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 .hero-link:hover,
 .hero-link:focus {
@@ -48,8 +56,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  transition: 300ms ease-out;
+  transition-property: background-color;
 }
 
 .hero-link:hover > .link-circle {
   background-color: #fd9222;
+}
+
+.hero-link:hover .hero-link-icon,
+.hero-link:focus .hero-link-icon {
+  color: #fff;
+}
+
+.hero-link-icon {
+  color: #fd9222;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }

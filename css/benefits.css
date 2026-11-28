@@ -8,8 +8,22 @@
   gap: 88px;
 }
 .benefits-items {
+  position: relative;
   width: 308px;
 }
+
+.benefits-items:not(:last-child)::after {
+  display: block;
+  background-color: rgba(255, 255, 255, 0.5);
+  height: 124px;
+  width: 1px;
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -44px;
+  transform: translateY(-50%);
+}
+
 .benefits-subtitles {
   margin-bottom: 18px;
   font-weight: 600;
@@ -24,4 +38,17 @@
 }
 
 .benefits-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  margin-bottom: 22px;
+
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+}
+
+.benefits-icon {
 }
